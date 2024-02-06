@@ -207,7 +207,7 @@ header  {
         }
         .welcome-area .header-text {       
           width: 92%;
-          padding-top: 793px;
+          padding-top: 240px;
         }
         .welcome-area .header-text .left-text {
           margin-top: 5%;
@@ -345,6 +345,13 @@ background-color: #232D8E;
     color: black;
     margin-left: 1rem;
  }
+ .welcome-area2 .header-text {
+  width: 70%;
+  margin: 0;
+  height: 50%;
+  margin-left: 5%;
+  margin-top: 0;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -665,6 +672,9 @@ text-align: center;
         font-size: 0.8em;
         font-weight: 600;
       }
+      .custom-toggler {
+        color: #fff !important;
+    }
       
       @media screen and (max-width: 500px) {
         .button-container {
@@ -751,7 +761,7 @@ text-align: center;
         }
         .welcome-area2 .header-text {       
           width: 92%;
-          padding-top: 793px;
+          padding-top: 240px;
         }
         .welcome-area2 .header-text .left-text {
           margin-top: 5%;
@@ -761,6 +771,9 @@ text-align: center;
       @media (max-width: 810px) {
         .welcome-area2 {
           background-size: contain;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       
         .welcome-area2 .header-text {
