@@ -79,3 +79,13 @@ document.getElementById("newsletterForm").addEventListener("submit", function(ev
 });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  // JavaScript code here
+  const menuIcon = document.getElementById("menuIcon");
+  const navbarNav = document.getElementById("navbarNav");
+
+  menuIcon.addEventListener("click", function() {
+      navbarNav.classList.toggle("show");
+  });
+});
+
