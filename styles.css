@@ -5,7 +5,6 @@
 }
 
 body, html {
-  min-width: none;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -15,11 +14,14 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; 
 }
 
 header  {
     background-color: #232D8E;
     color:#fff;
+    width: 100%; 
+    
 }
 .left_part  {
     display: flex;
@@ -221,6 +223,7 @@ header  {
           padding-top: 100%;
           margin-left: 0;
         }
+     
           
         .container-fluid .col-md-12 {
           margin-right: 0px;
@@ -281,12 +284,13 @@ border: 1px solid #ddd;
   position: relative;
   height: 100%;
   min-height: 100%;
-  background: url('./Design\ sans\ titre\ \(4\).png') center/cover; /* Set your image URL and adjust the background properties */
+  background-image: url('./Design\ sans\ titre\ \(4\).png');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .background-containere {
   position: relative;
@@ -313,7 +317,42 @@ background-color: #232D8E;
     flex-direction: column;
 
 }
+@media screen and (max-width: 768px) {
+  .roww {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .btn2{
+    border-radius: 16px;
+    border: 1px solid #232D8E; 
+    color: black;
+    margin-left: 1rem;
+ }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 95%;
+  }
+  .btn2{
+    border-radius: 16px;
+    border: 1px solid #232D8E; 
+    color: black;
+    margin-left: 1rem;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 25%;
+    margin: 1rem;
+  }
+}
 .card {
   width: 20em;
   height: 30.5em;
@@ -627,7 +666,22 @@ text-align: center;
         font-weight: 600;
       }
       
-
+      @media screen and (max-width: 500px) {
+        .button-container {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        
+        .button-container .btn1,
+        .button-container .btn2 {
+          display: block;
+          margin-bottom: 10px;
+          padding: 10px 10px;
+        }
+      }
+      
       
       .card2 .img {
         width: 20em;
@@ -715,6 +769,7 @@ text-align: center;
         }
           
         .container-fluid .col-md-12 {
+
           margin-right: 0px;
           padding-right: 0px;
         }
@@ -916,7 +971,6 @@ text-align: center;
          ul
          li
              a, a:visited {
-             color:#fff !important;
              }
          .header img {
              width:180px;
