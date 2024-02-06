@@ -961,7 +961,7 @@ text-align: center;
      }
      @media (max-width: 767px){
       .container    {
-             width:90%;
+             width:80%;
          }
          .nav-mobile {
              display: block;
