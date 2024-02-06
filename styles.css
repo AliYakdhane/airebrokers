@@ -183,7 +183,13 @@ header  {
         margin-bottom: 40px;
         position: relative;
       }
-      
+           @media screen and (max-width: 768px) {
+        /* Adjust width and height of the logo */
+        #logo {
+            width: 135px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
       @media (max-width: 1420px) {
         .welcome-area .header-text {
           width: 70%;
