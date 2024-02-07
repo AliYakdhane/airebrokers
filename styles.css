@@ -122,6 +122,9 @@ header  {
       .button-container {
         display: flex;
     }
+    .button-containerer {
+      display: flex;
+  }
     .divider-container {
         text-align: center;
         margin-top: -3rem;
@@ -156,6 +159,14 @@ header  {
         transition: background-color 0.3s ease;
         
     }
+    .button-containerer a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      padding: 10px 45px;
+      transition: background-color 0.3s ease;
+      
+  }
 
     .button-container a:hover {
         background-color: #F15A24; /* Adjust hover background color as needed */
@@ -183,13 +194,7 @@ header  {
         margin-bottom: 40px;
         position: relative;
       }
-           @media screen and (max-width: 768px) {
-        /* Adjust width and height of the logo */
-        #logo {
-            width: 135px; /* Adjust as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-    }
+      
       @media (max-width: 1420px) {
         .welcome-area .header-text {
           width: 70%;
@@ -345,6 +350,7 @@ background-color: #232D8E;
   .card {
     width: 95%;
   }
+
   .btn2{
     border-radius: 16px;
     border: 1px solid #232D8E; 
@@ -687,10 +693,21 @@ text-align: center;
           text-align: center;
           display: flex;
           justify-content: center;
-              margin-top: 10px;
-    margin-bottom: 50px;
+          margin-top: 10px;
+          margin-bottom: 50px;
         }
-        
+        .button-containerer {
+          text-align: center;
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 10px;
+          margin-bottom: 50px;
+        }
+        .button-containerer .btn1 {
+          display: block;
+          margin-bottom: 10px;
+          padding: 10px 10px;
+        }
         .button-container .btn1,
         .button-container .btn2 {
           display: block;
@@ -762,6 +779,13 @@ text-align: center;
         }
       }
       
+      @media screen and (max-width: 768px) {
+        /* Adjust width and height of the logo */
+        #logo {
+            width: 135px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
       @media (max-width: 1140px) {
         .welcome-area2 {
           height: auto;
@@ -784,7 +808,6 @@ text-align: center;
         }
       
         .welcome-area2 .header-text {
-          padding-top: 100%;
           margin-left: 0;
         }
           
@@ -856,7 +879,7 @@ text-align: center;
      }
      @media screen and (min-width:768px) and (max-width:990px) {
         .container {
-             width:80%;
+             width:75%;
          }
          .header  {
              display: none;
@@ -964,6 +987,10 @@ text-align: center;
       .container    {
              width:80%;
          }
+         #menuIcon{
+          float: right;
+         }
+     
          .nav-mobile {
              display: block;
          }
