@@ -1,3 +1,5 @@
+
+
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -79,13 +81,58 @@ document.getElementById("newsletterForm").addEventListener("submit", function(ev
 });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  // JavaScript code here
-  const menuIcon = document.getElementById("menuIcon");
-  const navbarNav = document.getElementById("navbarNav");
+document.addEventListener("DOMContentLoaded", () => {
+  const cardBg = document.getElementById("card-bg");
+  if (cardBg) {
+    cardBg.addEventListener("canplay", () => {
+      cardBg.style.display = "block";
+    });
 
-  menuIcon.addEventListener("click", function() {
-      navbarNav.classList.toggle("show");
-  });
+    let card = document.querySelector(".cardvid");
+    let container = document.querySelector(".containers");
+    let r = card.getBoundingClientRect();
+    let strength = 5;
+    let center = {
+      x: r.left + r.width / 2,
+      y: r.top + r.height / 2
+    };
+    let dif = {
+      x: 0,
+      y: 0
+    };
+    let transform = {
+      x: 0,
+      y: 0
+    };
+
+    document.addEventListener("mousemove", (event) => {
+      dif = {
+        x: ((event.clientX - center.x) / r.width) * 2,
+        y: ((event.clientY - center.y) / r.height) * 2
+      };
+      transform = {
+        x: dif.y * strength * -1,
+        y: dif.x * strength
+      };
+    });
+
+    container.addEventListener("mousemove", (event) => {
+      gsap.to(card, {
+        rotateX: `${transform.x}deg`,
+        rotateY: `${transform.y}deg`,
+        overwrite: true,
+        duration: 0.2
+      });
+    });
+
+    container.addEventListener("mouseleave", (event) => {
+      gsap.to(card, {
+        rotateX: "0deg",
+        rotateY: "0deg",
+        overwrite: true
+      });
+    });
+  } else {
+    console.error("Video element not found.");
+  }
 });
-
