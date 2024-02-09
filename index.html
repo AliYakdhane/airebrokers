@@ -3,103 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <link rel="icon" href="./Aire Brokers Logo-06.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="../index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-    <title>Airebrokers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Inter:wght@200;300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="./main.css">
+    <title>Airebrokers Web</title>    
 </head>
-<body>
-    <header class="w-100">
-        <div class="header container">
-          <div class="left_part">
-            <a style="text-decoration: none;" href="#"><i style="color: #F15A24;" class="fa fa-envelope" aria-hidden="true"></i> Airebrokers@Airebrokers.com</a>              
-            <a style="text-decoration: none;" href="#"><i style="color: #F15A24;" class="fas fa-map-marker-alt"></i> 3801 chalk butte rd cut bank MT 59427 Beverley<br/>  &nbsp;&nbsp;&nbsp;&nbsp;Near Broklyn, New York 1226 US</a>
-            <a style="text-decoration: none;" href="#">
-                <i style="color: #F15A24;" class="fa-solid fa-clock"></i> 612-888-5888<br/>
-                 &nbsp;&nbsp;&nbsp;&nbsp;Mon-Fri: 8:00 am - 06:30 pm
-              </a>
-              
-              
-          </div>
-      
-        </div>
+<body>      
+     <header>
+            <div class="header container">
+              <div class="left_part">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 612-888-5888</a>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> steve@theuptownguy.com</a>              
+              </div>
+              <div class="right_part">
+               <a href="#">Terms of Service</a>
+               <a href="#">Privacy Policy</a>
+              </div>
+            </div>
     </header>
-   
-            
-          <div class="w-100" style="display: flex; justify-content: center; background-color: #232D8E;">    
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #232D8E;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img id="logo" src="./navlogo.png" alt="Logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i id="menuIcon" style="color: #fff; border: none;" class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto"> <!-- ms-auto moves the toggle button to the right -->
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Sellers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Buyers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            
-                  
-                </div>  
+          <!-- navigation bar start-->
+     <div class="f-container">
+          <div class="nav-container container">
+            <div class="brand">
+              <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <nav>
+              <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+              <ul class="nav-list">
+                <li>
+                  <a href="index.html" class="active">Home</a>
+       
+                </li>
+                <li>
+                  <a href="#">Buyers</a>
+                </li>
+                <li>
+                  <a href="#">Sellers</a>
+                </li>
+                <li>
+                  <a href="#">Agents</a> 
+                </li>
+                <li>
+                  <a href="#!">News / Blog</a>
+                </li>
+                <a href=""><div class="btn sell">Sell My Property!</div></a>
+              </ul>
              
-              
-</div>
+            </nav>
+          </div>
+     </div>
+     <div class="landing-page">
 
-<div class="landing-page">
-
-    <div class="content">
-      <div class="container">
-        <div class="info">
-          <h4>List and sell your home yourself.<br/>Save thousands in comissions</h4>
-          <p>Sell your home independently, save thousands on commissions.Take control with our user-friendly platform. Start saving now!</p> 
-          <br/><br/>
-          <div class="button-container">
-            <a class="btn1" href="#">LEARN MORE</a>
-            <a class="btn2" href="#">GET STARTED</a>
-        </div>
-         </div>
-         <br/>
-        <div class="image">
-          <img src="https://i.postimg.cc/65QxYYzh/001234.png">
+      <div class="content">
+        <div class="container">
+          <div class="info">
+            <h4>List and sell your home yourself.<br/>Save thousands in comissions</h4>
+            <p class="para">Sell your home independently, save thousands on commissions.Take control with our user-friendly platform. Start saving now!</p> 
+            <br/><br/>
+            <div class="button-container">
+              <a class="btn1" href="#">LEARN MORE</a>
+              <a class="btn2" href="#">GET STARTED</a>
+          </div>
+           </div>
+           <br/>
+          <div class="image">
+            <img style="border-radius: 50%;" src="./home.png">
+          </div>
         </div>
       </div>
     </div>
+    <div class="divider-container">
+      <div class="logo-container">
+          <img src="./Aire_Brokers_Logo-05-removebg-preview.png" alt="Logo" class="logo">
+      </div>
   </div>
-<div class="divider-container">
-    <div class="logo-container">
-        <img src="./Aire_Brokers_Logo-05-removebg-preview.png" alt="Logo" class="logo">
-    </div>
-</div>
 
-<div class="landing-page">
+  <div class="landing-page">
 
     <div class="content">
       <div class="container">
@@ -118,8 +99,8 @@
        
         <div class="info">
             <b style="color: #F15A24;">ABOUT US </b>
-            <h4>Why Most People Choose <br/>Our Business Solutions </h4>
-            <p>Sell your home independently, save thousands on commissions.<br/>Take control with our user-friendly platform. Start saving now!</p> 
+            <h4>Why Most People Choose<br/> Our Business Solutions </h4>
+            <p class="para">Sell your home independently, save thousands on commissions.<br/>Take control with our user-friendly platform. <br/>Start saving now!</p> 
             <br/><br/>
           <div class="button-container">
             <a class="btn1" href="#">READ MORE</a>
@@ -131,8 +112,7 @@
       </div>
     </div>
   </div>
-
-<div class="background-container">
+  <div class="background-container">
     <div class="logooi"></div>
     <br/>
 <div class="title">
@@ -191,6 +171,7 @@
 <div class="logo-bottom"></div>
 
 </div>
+
 <br/>
 <br/>
 <div  class="landing-page" id="welcome">
@@ -204,10 +185,10 @@
                   
                     <br/>
                   
-                    <h4>Aire Brokers gives homeowners the power to sell their own property </h4>
+                    <h4>Aire Brokers gives homeowners the power <br/>to sell their own property </h4>
 
                     
-                    <p>Pay zero commission<br/>We offer a money back guarantee if after listing your property, you choose to list with one of our partner agents. Instead changing 3% listing commission, our partner agents offer a full service experience for a fair fixed fee. We will refund your listing fees to ResultsMLS after closing.</p> 
+                    <p class="para">Pay zero commission<br/>We offer a money back guarantee if after listing your property, you choose to list with one of our partner agents. Instead changing 3% listing commission, our partner agents offer a full service experience for a fair fixed fee. We will refund your listing fees to ResultsMLS after closing.</p> 
                     <br/>
                     <b>Marketing Strategy </b>
 
@@ -247,231 +228,305 @@
             
     </div>
 </div>
-
-
 <div style="margin-top: 10rem;" class="background-containere">
-    <div class="logooi"></div>
-    <br/>
-    <div class="title">
-        <b style="color: #F15A24;">Don't just take our world for it </b>
-        <h4 style="color: #fff;">Our Latest Blog </h4></div>
-        <br/>
-        
-            <div class="card-container">
-                <div class="custom-card">
-                    <div class="custom-card__header">
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
-                    </div>
-                    <div class="custom-card__body">
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
-                    </div>
-                    <div class="custom-card__footer">
-                        <div class="custom-user">
-                            <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
+  <div class="logooi"></div>
+  <br/>
+  <div class="title">
+      <b style="color: #F15A24;">Don't just take our world for it </b>
+      <h4 style="color: #fff;">Our Latest Blog </h4></div>
+      <br/>
+      
+          <div class="card-container">
+              <div class="custom-card">
+                  <div class="custom-card__header">
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
+                  </div>
+                  <div class="custom-card__body">
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
+                  </div>
+                  <div class="custom-card__footer">
+                      <div class="custom-user">
+                          <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="custom-card">
+                  <div class="custom-card__header">
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
+                  </div>
+                  <div class="custom-card__body">
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
+                  </div>
+                  <div class="custom-card__footer">
+                      <div class="custom-user">
+                      
+                          <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
                         </div>
-                    </div>
+                  </div>
                 </div>
-                
                 <div class="custom-card">
-                    <div class="custom-card__header">
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
-                    </div>
-                    <div class="custom-card__body">
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
-                    </div>
-                    <div class="custom-card__footer">
-                        <div class="custom-user">
-                        
-                            <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
-                          </div>
+                  <div class="custom-card__header">
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
+                  </div>
+                  <div class="custom-card__body">
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
+                      <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
+                  </div>
+                  <div class="custom-card__footer">
+                    <div class="custom-user">
+                      
+                      <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
+                  </div>
                     </div>
                   </div>
                   <div class="custom-card">
-                    <div class="custom-card__header">
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
-                    </div>
-                    <div class="custom-card__body">
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
-                        <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
-                    </div>
-                    <div class="custom-card__footer">
-                      <div class="custom-user">
-                        
-                        <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
-                    </div>
+                      <div class="custom-card__header">
+                          <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
                       </div>
-                    </div>
-                    <div class="custom-card">
-                        <div class="custom-card__header">
-                            <a href="https://blog.airebrokers" style="text-decoration: none;"> <img src="https://source.unsplash.com/600x400/?computer" alt="custom-card__image" class="custom-card__image" width="600"></a>
-                        </div>
-                        <div class="custom-card__body">
-                            <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
-                            <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
-                            <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
-                        </div>
-                        <div class="custom-card__footer">
-                          <div class="custom-user">
-                            
-                            <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
-                            </div>
+                      <div class="custom-card__body">
+                          <a href="https://blog.airebrokers" style="text-decoration: none;"><span class="custom-tag custom-tag-brown">Technology</span></a>
+                          <a href="https://blog.airebrokers" style="text-decoration: none;"><h4>What's new in 2022 Tech</h4></a>
+                          <a href="https://blog.airebrokers" style="text-decoration: none;"><p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p></a>
+                      </div>
+                      <div class="custom-card__footer">
+                        <div class="custom-user">
+                          
+                          <a href="https://blog.airebrokers" style="text-decoration: none;">Read More..</a>
                           </div>
                         </div>
-                  </div>
-              </div>
-     
-                <!-- Repeat similar structure for other cards -->
-            
-              
-    </div>
-
-</div>
-
-<footer class="footer-section">
-    <div class="container">
-     
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <br/>
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="./Aire Brokers Logo-03.png" class="img-fluid" alt="logo"></a>
-                        </div>
-                        <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                            elit,Lorem ipsum dolor sit amet.</p>
-                        </div>
-                   
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <br/>
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Our Services</h3>
-                        </div>
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Sellers</a></li>
-                            <li><a href="#!">Buyers</a></li>
-                            <li><a href="#!">FAQ</a></li>
-                            <li><a href="#!">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <br/>
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form id="newsletterForm">
-                                <input type="email" id="email" placeholder="Email Address" required>
-                                <button type="submit"><i class="fab fa-telegram-plane"></i></button>
-                            </form>
-                        </div>
-                        <div id="confirmationMessage" style="display: none;">
-                            Thank you for subscribing!
-                        </div>
-                        
-                    </div>
+                      </div>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4 mb-50">
-                    <br/>
-                    <div class="footer-widget">
-                        <div class="footer-social-icon">
-                            <div class="footer-widget-heading">
-                                <h3>Follow Us</h3>
-                            </div>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                       
-                           
-                          
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-xl-2 col-lg-3 col-md-4 mb-50">
-                    <br/>
-                    <div class="footer-social-icon">
-                        <div class="footer-widget-heading">
-                            <h3>Call Us</h3>
-                        </div>
-                        <a  href="#"> <i style="color: #fff; " class="fas fa-phone phone-bg"></i></a>
-                        <a style="text-decoration: none;" href="#"> 612-888-5888</a>
-                        </div></div>
-                        
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <br/>
-                    <div class="footer-social-icon">
-                        <div class="footer-widget-heading">
-                            <h3>Find Us</h3>
-                        </div>
-                        <a href="#"><i class="fas fa-map-marker-alt marker-bg"></i></a>
-                        <a style="text-decoration: none;" href="#">3801 chalk butte bank MT 59427 <br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Beverley Near Broklyn, New York 1226 US</a>
-               
-                        </div></div>
-                        <div class="col-xl-3 col-lg-3 col-md-4 mb-50">
-                            <br/>
-                            <div class="footer-social-icon">
-                                <div class="footer-widget-heading">
-                                    <h3>Mail Us</h3>
-                                </div>
-                        <a  href="#"><i class="far fa-envelope-open mail-bg"></i></a>
-                        <a style="text-decoration: none;" href="#">Airebrokers@Airebrokers.com</a>
-                        </div></div>
-                  
-             
-                    </div>
-                </div>
 
-            </div>
+
+    <footer>  
+        <div class="bg_blue">
+          <div class="container flex">
+          <div class="logo_footer">
+            <img src="images/logo.png">
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 612-888-5888</a>
+            <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> steve@theuptownguy.com</a> 
+         </div>
+         <div class="link_icon">
+          <div class="last_footer">
+            <h4>Company</h4>
+            <a href="">Home</a>
+            <a href="">Buyers</a>
+            <a href="">Sellers</a>
+            <a href="">Agents</a>
+            <a href="">News / Blog</a>
         </div>
-    </div>
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2024, All Right Reserved <a href="Airebreokers.com">Airebrokers</a></p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Sellers</a></li>
-                            <li><a href="#!">Buyers</a></li>
-                            <li><a href="#!">FAQ</a></li>
-                            <li><a href="#!">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="last_footer">
+          <h4>Other Links</h4>
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
         </div>
-    </div>
-</footer>
+        <div class="icons">
+         
+          <h4>Follow Us</h4>
+          <div class="inner_icons">
+        <div class="follow_icon">
+          <a href="http://facebook.com/AireBrokers"><i class="fa fa-facebook f_icon" aria-hidden="true"></i></a>
+          <!-- <a href="" class="follow">Follow</a> -->
+        </div>
+        <div class="follow_icon">
+            <a href="#"><i class="fa fa-twitter f_icon" aria-hidden="true"></i></a>
+            <!-- <a href="" class="follow">Follow</a> -->
+            </div>
+            <div class="follow_icon">
+            <a href="#"><i class="fa fa-instagram f_icon" aria-hidden="true"></i></a>
+            <!-- <a href="" class="follow">Follow</a>             -->
+            </div> 
+            </div>
+          </div>
+        </div>
+         </div>
+        </div>
+        <!-- <div class="end_part container">
+            <h2>Let's Be Friends:</h2>
+             <div class="first_footer">                
+                <div class="icons">
+                    <div class="follow_icon">
+                  <a href="http://facebook.com/AireBrokers"><i class="fa fa-facebook f_icon" aria-hidden="true"></i></a><a href="" class="follow">Follow</a>
+                </div>
+                <div class="follow_icon">
+                    <a href="#"><i class="fa fa-twitter f_icon" aria-hidden="true"></i></a><a href="" class="follow">Follow</a>
+                    </div>
+                    <div class="follow_icon">
+                    <a href="#"><i class="fa fa-instagram f_icon" aria-hidden="true"></i></a><a href="" class="follow">Follow</a>            
+                    </div>        
+                </div>             
+             <div class="logo_footer">
+                <img src="images/logo.png">
+             </div>
+            </div>
+        </div> -->
+        <!-- <div class="bg_orange">
+          <div class="container flex">
+            <div class="last_footer">
+                <a href="">Home</a>
+                <a href="">Buyers</a>
+                <a href="">Sellers</a>
+                <a href="">Agents</a>
+                <a href="">News / Blog</a>
+            </div>
+            <div class="copy_wright">
+              <p>2024 © Copyright Aire Brokers All Rights Reserved</p>
+            </div>
+          </div>
+        </div> -->
+        </footer> 
+        <div class="copy_wright">
+          <p>2024 © Copyright Aire Brokers All Rights Reserved</p>
+        </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      
+
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const rangeSliders = document.querySelectorAll(".range-slider__range");
+
+    rangeSliders.forEach((slider) => {
+      updateRangeWidth(slider);
+
+      slider.addEventListener("input", function() {
+        updateRangeWidth(this);
+      });
+    });
+
+    function updateRangeWidth(slider) {
+      const percentage = (slider.value / (slider.max - slider.min)) * 100;
+      slider.style.background = `linear-gradient(to right, #F15A24 0%, orange ${percentage}%, #3498db ${percentage}%, #232D8E 100%)`;
+    }
+  });
+
+  function resetValue(slider, index) {
+    const fixedValues = [450, 400, 470, 350];
+    slider.value = fixedValues[index - 1];
+  }
+
+function triggerCloudy() {
+	link = document.getElementById("urlArea").value;
+	if (link.length > 15 && myRegex.test(link)) {
+		anchorURL.href=link;
+		var myPlayer = videojs("player");
+		myPlayer.src(link);
+		myPlayer.play();
+	} else {
+		$("#urlArea").effect( "highlight", {color:"#ff0000"}, 500 );
+	}
+}
 
 
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var email = document.getElementById("email").value;
+
+    fetch('/subscribe', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: email })
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new Error('Network response was not ok.');
+    })
+    .then(data => {
+        console.log('Subscription successful:', data);
+        document.getElementById("confirmationMessage").style.display = "block";
+        document.getElementById("email").value = "";
+    })
+    .catch(error => {
+        console.error('There was a problem with your subscription:', error);
+    });
+});
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cardBg = document.getElementById("card-bg");
+  if (cardBg) {
+    cardBg.addEventListener("canplay", () => {
+      cardBg.style.display = "block";
+    });
+
+    let card = document.querySelector(".cardvid");
+    let container = document.querySelector(".containers");
+    let r = card.getBoundingClientRect();
+    let strength = 5;
+    let center = {
+      x: r.left + r.width / 2,
+      y: r.top + r.height / 2
+    };
+    let dif = {
+      x: 0,
+      y: 0
+    };
+    let transform = {
+      x: 0,
+      y: 0
+    };
+
+    document.addEventListener("mousemove", (event) => {
+      dif = {
+        x: ((event.clientX - center.x) / r.width) * 2,
+        y: ((event.clientY - center.y) / r.height) * 2
+      };
+      transform = {
+        x: dif.y * strength * -1,
+        y: dif.x * strength
+      };
+    });
+
+    container.addEventListener("mousemove", (event) => {
+      gsap.to(card, {
+        rotateX: `${transform.x}deg`,
+        rotateY: `${transform.y}deg`,
+        overwrite: true,
+        duration: 0.2
+      });
+    });
+
+    container.addEventListener("mouseleave", (event) => {
+      gsap.to(card, {
+        rotateX: "0deg",
+        rotateY: "0deg",
+        overwrite: true
+      });
+    });
+  } else {
+    console.error("Video element not found.");
+  }
+});
+
+    </script>
 </body>
 </html>
